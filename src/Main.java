@@ -9,7 +9,6 @@ public class Main {
         Array arrayN = new Array();
         arrayN.setaSize(library.getArraySize("Enter number of array: "));
         arrayN.setArray(library.createArray(arrayN.getaSize()));
-        System.out.println(arrayN.getaSize());
         Menu mainMenu = new SortController(arrayN, null);
         new SortController(arrayN, mainMenu).run();
     }
